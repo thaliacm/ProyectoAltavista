@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F0ABFDD-8A23-4240-B7DE-167F77E04B89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoAltavista</RootNamespace>
+    <AssemblyName>ProyectoAltavista</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsultarAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAgente.Designer.cs">
+      <DependentUpon>ConsultarAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarCliPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliPropietario.Designer.cs">
+      <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarContratoInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarContratoInmueble.designer.cs">
+      <DependentUpon>ConsultarContratoInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarInmueble.designer.cs">
+      <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarVentas.Designer.cs">
+      <DependentUpon>ConsultarVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContratoInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContratoInmueble.designer.cs">
+      <DependentUpon>ContratoInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inmueble.Designer.cs">
+      <DependentUpon>Inmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InmuebleMantenedorCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InmuebleMantenedorCasa.Designer.cs">
+      <DependentUpon>InmuebleMantenedorCasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InmuebleSetorRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InmuebleSetorRegistro.Designer.cs">
+      <DependentUpon>InmuebleSetorRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorBanco.Designer.cs">
+      <DependentUpon>MantenedorBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorDeInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorDeInmueble.Designer.cs">
+      <DependentUpon>MantenedorDeInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCita.Designer.cs">
+      <DependentUpon>MCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuVentas.Designer.cs">
+      <DependentUpon>MenuVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarCasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarCasa.designer.cs">
+      <DependentUpon>MModificarCasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarDepartamento.designer.cs">
+      <DependentUpon>MModificarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarTerreno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarTerreno.designer.cs">
+      <DependentUpon>MModificarTerreno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MMostrarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMostrarCita.Designer.cs">
+      <DependentUpon>MMostrarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarBanco.Designer.cs">
+      <DependentUpon>ModificarBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrandoBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrandoBanco.Designer.cs">
+      <DependentUpon>MostrandoBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorAgente.Designer.cs">
+      <DependentUpon>MantenedorAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCiudad.Designer.cs">
+      <DependentUpon>MantenedorCiudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MNuevoSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>MNuevoSector.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMostrarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MMostrarSector.Designer.cs">
+      <DependentUpon>MMostrarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarSector.Designer.cs">
+      <DependentUpon>MModificarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorSector.Designer.cs">
+      <DependentUpon>MantenedorSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorCliPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCliPropietario.Designer.cs">
+      <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorSitiosInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorSitiosInteres.designer.cs">
+      <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MModificarSitiosInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MModificarSitiosInteres.Designer.cs">
+      <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarAgente.Designer.cs">
+      <DependentUpon>ModificarAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCiudad.Designer.cs">
+      <DependentUpon>ModificarInhabilitarCiudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCliente.Designer.cs">
+      <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCliPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarInhabilitarCliPropietario.Designer.cs">
+      <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InmuebleMostrarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InmuebleMostrarSector.Designer.cs">
+      <DependentUpon>InmuebleMostrarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRegistrarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRegistrarCita.Designer.cs">
+      <DependentUpon>MRegistrarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MRegistrarSitioInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MRegistrarSitioInteres.Designer.cs">
+      <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarSitiosInteres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarSitiosInteres.designer.cs">
+      <DependentUpon>ConsultarSitiosInteres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistarDepartamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistarDepartamento.Designer.cs">
+      <DependentUpon>RegistarDepartamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarAgente.Designer.cs">
+      <DependentUpon>RegistrarAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarCiudad.Designer.cs">
+      <DependentUpon>RegistrarCiudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarCliente.Designer.cs">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCliente.Designer.cs">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarCliPropietario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarCliPropietario.Designer.cs">
+      <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarContratoInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarContratoInmueble.designer.cs">
+      <DependentUpon>RegistrarContratoInmueble.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarTerreno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarTerreno.Designer.cs">
+      <DependentUpon>RegistrarTerreno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarVentaPropios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarVentaPropios.Designer.cs">
+      <DependentUpon>RegistrarVentaPropios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarVentaTerceros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrarVentaTerceros.Designer.cs">
+      <DependentUpon>RegistrarVentaTerceros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroBanco.Designer.cs">
+      <DependentUpon>RegistroBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroSitioInmueble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroSitioInmueble.Designer.cs">
+      <DependentUpon>RegistroSitioInmueble.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ConsultarAgente.resx">
+      <DependentUpon>ConsultarAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliPropietario.resx">
+      <DependentUpon>ConsultarCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarContratoInmueble.resx">
+      <DependentUpon>ConsultarContratoInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarInmueble.resx">
+      <DependentUpon>ConsultarInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarVentas.resx">
+      <DependentUpon>ConsultarVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContratoInmueble.resx">
+      <DependentUpon>ContratoInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inmueble.resx">
+      <DependentUpon>Inmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InmuebleMantenedorCasa.resx">
+      <DependentUpon>InmuebleMantenedorCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InmuebleSetorRegistro.resx">
+      <DependentUpon>InmuebleSetorRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorBanco.resx">
+      <DependentUpon>MantenedorBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorDeInmueble.resx">
+      <DependentUpon>MantenedorDeInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCita.resx">
+      <DependentUpon>MCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuVentas.resx">
+      <DependentUpon>MenuVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MModificarCasa.resx">
+      <DependentUpon>MModificarCasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MModificarDepartamento.resx">
+      <DependentUpon>MModificarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MModificarTerreno.resx">
+      <DependentUpon>MModificarTerreno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMostrarCita.resx">
+      <DependentUpon>MMostrarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarBanco.resx">
+      <DependentUpon>ModificarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrandoBanco.resx">
+      <DependentUpon>MostrandoBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorAgente.resx">
+      <DependentUpon>MantenedorAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCiudad.resx">
+      <DependentUpon>MantenedorCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorSector.resx">
+      <DependentUpon>MantenedorSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCliente.resx">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCliPropietario.resx">
+      <DependentUpon>MantenedorCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorSitiosInteres.resx">
+      <DependentUpon>MantenedorSitiosInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MModificarSector.resx">
+      <DependentUpon>MModificarSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MModificarSitiosInteres.resx">
+      <DependentUpon>MModificarSitiosInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MMostrarSector.resx">
+      <DependentUpon>MMostrarSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MNuevoSector.resx">
+      <DependentUpon>MNuevoSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarAgente.resx">
+      <DependentUpon>ModificarAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInhabilitarCiudad.resx">
+      <DependentUpon>ModificarInhabilitarCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInhabilitarCliente.resx">
+      <DependentUpon>ModificarInhabilitarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarInhabilitarCliPropietario.resx">
+      <DependentUpon>ModificarInhabilitarCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InmuebleMostrarSector.resx">
+      <DependentUpon>InmuebleMostrarSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRegistrarCita.resx">
+      <DependentUpon>MRegistrarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MRegistrarSitioInteres.resx">
+      <DependentUpon>MRegistrarSitioInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarSitiosInteres.resx">
+      <DependentUpon>ConsultarSitiosInteres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegistarDepartamento.resx">
+      <DependentUpon>RegistarDepartamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarAgente.resx">
+      <DependentUpon>RegistrarAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarCiudad.resx">
+      <DependentUpon>RegistrarCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarCliente.resx">
+      <DependentUpon>RegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarCliPropietario.resx">
+      <DependentUpon>RegistrarCliPropietario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarContratoInmueble.resx">
+      <DependentUpon>RegistrarContratoInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarTerreno.resx">
+      <DependentUpon>RegistrarTerreno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarVentaPropios.resx">
+      <DependentUpon>RegistrarVentaPropios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarVentaTerceros.resx">
+      <DependentUpon>RegistrarVentaTerceros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroBanco.resx">
+      <DependentUpon>RegistroBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroSitioInmueble.resx">
+      <DependentUpon>RegistroSitioInmueble.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{5f8dd474-b4eb-4d4b-8398-f68017867459}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaLogica\CapaLogica.csproj">
+      <Project>{9e97eed9-7422-40b3-aa9d-0dcbebe98f76}</Project>
+      <Name>CapaLogica</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidad\CapaEntidad.csproj">
+      <Project>{b0eab878-5b80-4294-9575-e1a9f0609272}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
